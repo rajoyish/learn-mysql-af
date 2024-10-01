@@ -1,0 +1,86 @@
+# OS-specific files
+
+## Windows (WSL)
+# Windows system files
+Thumbs.db
+Desktop.ini
+# WSL generated files
+*.bak
+*.swp
+*.swo
+*.dmp
+
+## MacOS
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# macOS file resource forks
+*/._*
+
+# Docker-related files
+# Ignore Docker files that shouldn't be committed
+docker-compose.override.yml
+.dockerignore
+
+# Ignore Docker volumes and other runtime files
+**/docker-compose*.yml
+**/docker-compose*.yaml
+**/.env
+**/logs
+**/tmp
+**/volumes
+
+# Exclude Docker-related files in WSL/Windows environments
+**/Dockerfile.*
+
+# Ignore Docker build and temporary files
+docker-compose*.log
+docker-compose*.bak
+
+# Node modules (in case Node.js is used with Docker)
+node_modules
+
+# Python virtual environments (in case of Python-based Docker apps)
+venv/
+__pycache__/
+
+# Logs and temp files
+*.log
+*.tmp
+*.pid
+
+# WSL and Docker cache
+.cache/
+tmp/
+
+# IDE and editor specific files (Optional)
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
